@@ -1,0 +1,75 @@
+<!-- 
+
+  NÃO TEM NADA HAVER COM REACT
+
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .s1 {
+      /* border: 5px solid #ccc; */
+      border-left: 2px solid #00CC99;
+      border-right: 2px solid #00CC99;
+      border-radius: 100%;
+      height: 150px;
+      width: 150px;
+      
+    }
+    .is-animating {
+      animation: loading 1.5s linear infinite
+    }
+    .spin{
+      border-radius: 100%;
+    }
+    .s2{
+      border-left: 2px solid #000;
+      border-right: 2px solid #000;
+      height: 130px;
+      width: 130px;
+      animation: loading2 1.5s linear infinite;
+    }
+
+    @keyframes loading2 {
+      0%{ 
+        transform: rotate(0)
+      }
+      50%{
+        transform: rotate(-360deg)
+      }
+      100%{ 
+        transform: rotate(-720deg)
+      }
+    }
+    @keyframes loading {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="is-animating s1">
+      <div class="spin s2"></div>
+    </div>
+
+    <!-- 
+    <div class="spin s3"></div> -->
+  </div>
+
+</body>
+
+</html>
